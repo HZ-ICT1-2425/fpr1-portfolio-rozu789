@@ -1,0 +1,87 @@
+/*---------BODY & TEXT---------*/
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+
+/*---------HEADER---------*/
+.header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: outfit;
+    font-size: 60px;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+/*---------NAVIGATION---------*/
+.navBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+
+.navLogo {
+    margin-top: 0;
+    float: left;
+    vertical-align: middle;
+    line-height: 50px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-family: outfit;
+    font-weight: 650;
+    color: #3a3a3a;
+
+
+}
+
+.navBar a {
+    float: right;
+    vertical-align: middle;
+    line-height: 50px;
+    padding-right: 70px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: outfit;
+    font-weight: 650;
+    color: #3a3a3a85;
+
+}
+
+.navBar a:hover {
+    color: #3a3a3a;
+}
+
+/*---------FOOTER---------*/
+.footer {
+    margin-top: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+.socialIconList {
+    float: left;
+    margin-top: 300px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    color: #f5f5f5;;
+}
+
+.socialIcon {
+    width: 60px;
+    height: auto;
+    margin: 30px;
+    color: #f5f5f5;
+}
+
+.HZlogo {
+    float: right;
+    height: 60px;
+    margin-top: 300px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
