@@ -39,11 +39,21 @@
                    class="navbar-item {{ Request::route()->getName() === 'home' ? "is-active" : "" }}">
                     Home
                 </a>
-            </div>
-            <div class="navbar-start">
                 <a href="{{ route('blog') }}"
                    class="navbar-item {{ Request::route()->getName() === 'blog' ? "is-active" : "" }}">
-                    Home
+                    Blog
+                </a>
+                <a href="{{ route('dashboard') }}"
+                   class="navbar-item {{ Request::route()->getName() === 'dashboard' ? "is-active" : "" }}">
+                    Dashboard
+                </a>
+                <a href="{{ route('faq') }}"
+                   class="navbar-item {{ Request::route()->getName() === 'faq' ? "is-active" : "" }}">
+                    Faq
+                </a>
+                <a href="{{ route('profile') }}"
+                   class="navbar-item {{ Request::route()->getName() === 'profile' ? "is-active" : "" }}">
+                    Profile
                 </a>
             </div>
         </div>
