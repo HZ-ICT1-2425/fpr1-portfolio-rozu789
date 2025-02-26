@@ -21,86 +21,21 @@
 </head>
 <body>
 {{-- Navigation bar --}}
-<nav class="navbar is-primary  has-text-white" >
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">
-                <strong><i class="fas fa-graduation-cap"></i> HZ</strong>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a href="{{ route('home') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'home' ? "is-active" : "" }}">
-                    Home
-                </a>
-                <a href="{{ route('blog') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'blog' ? "is-active" : "" }}">
-                    Blog
-                </a>
-                <a href="{{ route('dashboard') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'dashboard' ? "is-active" : "" }}">
-                    Dashboard
-                </a>
-                <a href="{{ route('faq') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'faq' ? "is-active" : "" }}">
-                    Faq
-                </a>
-                <a href="{{ route('profile') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'profile' ? "is-active" : "" }}">
-                    Profile
-                </a>
-            </div>
-        </div>
-    </div>
-</nav>
+<x-NavBar />
 
 {{-- Content --}}
-<div class="header">
-    <h1>Blog.</h1>
-</div>
-
-<div id="blogRow1">
-    <div id="blogFieldWork">
-        <h3><a href="blogposts/fieldwork.html">field work article</a></h3>
-        <p>description</p>
-
-    </div>
-
-
-    <div id="blogFirstFeedback" class="blogMiddle">
-        <h3> <a href="blogposts/firstfeedback.html">First feedback</a></h3>
-        <p>After two weeks of working on my website I had to pitch it to my teachers and fellow student. In this blog i'll show what feedback i got on my website.</p>
-
-    </div>
+<h1>Blog Posts</h1>
+<ul>
+    @foreach ($posts as $post)
+        <li>
+            <a href="{{ route('posts.show', $post['slug']) }}">
+                {{ $post['title'] }}
+            </a>
+        </li>
+    @endforeach
+</ul>
 
 
-    <div id="blogProgramming">
-        <h3><a href="blogposts/programming.html">My programming experience</a></h3>
-        <p>In this blog i'll talk about what (very little) experience I had in programming before I started this study.</p>
-
-    </div>
-</div>
-
-<div id="blogRow2">
-    <div id="blogStudyChoice">
-        <h3><a href="blogposts/studychoice.html">Study choice</a></h3>
-        <p>In this blog i'll explain why I think ICT fits me.</p>
-
-    </div>
-
-
-    <div id="blogSwot" class="blogMiddle">
-        <h3><a href="blogposts/swot.html">SWOT</a></h3>
-        <p>description</p>
-
-    </div>
-</div>
 
 {{-- Footer --}}
 <footer class="footer">
