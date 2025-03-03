@@ -1,0 +1,127 @@
+.bakcToBlog a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #3a3a3a;
+    padding: 20px;
+    position: absolute;
+}
+
+.blogTitle {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #3a3a3a;
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #3a3a3a;
+}
+
+.studyChoiceActivities, .studyChoiceMotivation, .studyChoiceAfter {
+    width: 30%;
+    float: left;
+    padding: 1%;
+    text-align: center;
+}
+
+
+#swot h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+#swot p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#swot2 p{
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+#swot li{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#s {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+#w {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+#o {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+#t {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+#programmingExperience {
+    text-align: center;
+    font-size: 18px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.positive {
+    float: left;
+    width: 20%;
+    margin-left: 25%;
+}
+
+.negative {
+    float: right;
+    width: 20%;
+    margin-right: 25%;
+}
+
+.positive p {
+    text-align: center;
+}
+
+.negative p {
+    text-align: center;
+}
+
+#response {
+    width: 100%;
+    position: absolute;
+    margin-top: 25%;
+    text-align: center;
+    margin-bottom: 300px;
+
+}
+
+#response p {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
