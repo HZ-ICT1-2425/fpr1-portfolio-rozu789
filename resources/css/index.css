@@ -1,25 +1,38 @@
+/*---------Fonts---------*/
+@font-face {
+    font-family: 'LTSaeada-Medium';
+    src: url('../fonts/LTSaeada-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTSaeada-ExtraLight';
+    src: url('../fonts/LTSaeada-ExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*---------Text---------*/
 p {
-    font-family: Gowun Dodum;
+    font-family: 'LTSaeada-ExtraLight', monospace;
     font-size: 20px;
     color: #3a3a3a;
 }
 
 h2 {
-    font-family: outfit;
+    font-family: 'LTSaeada-Medium', monospace;
     font-size: 50px;
     color: #3a3a3a;
 }
 
+/*---------Image slideshow---------*/
 #indexMotivationText {
     float: left;
     width: 40%;
     margin-left: 10%;
 
 }
-
-
-
-
 
 #legoBatmanImgShowcase {
 
@@ -33,7 +46,7 @@ h2 {
 }
 
 body {
-    font-family: Verdana, sans-serif; margin:0
+
 }
 
 .mySlides {

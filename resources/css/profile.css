@@ -1,17 +1,14 @@
 p {
-    font-family: Gowun Dodum;
     font-size: 20px;
     color: #3a3a3a;
 }
 
 h2 {
-    font-family: outfit;
     font-size: 50px;
     color: #3a3a3a;
 }
 
 li {
-    font-family: Gowun Dodum;
     font-size: 20px;
     color: #3a3a3a;
     margin-bottom: 40px;
@@ -63,8 +60,6 @@ div.scroll-container img {
 }
 
 h3 {
-
-    font-family: outfit;
     font-size: 40px;
     color: #3a3a3a;
     text-align: left;

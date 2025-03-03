@@ -13,11 +13,11 @@ class PostController extends Controller
     public function index()
     {
         $posts = [
-            ['title' => 'Fieldwork', 'slug' => 'fieldwork'],
-            ['title' => 'First Feedback', 'slug' => 'firstfeedback'],
-            ['title' => 'Programming', 'slug' => 'programming'],
-            ['title' => 'Study Choice', 'slug' => 'studychoice'],
-            ['title' => 'SWOT Analysis', 'slug' => 'swot'],
+            ['title' => 'Fieldwork', 'slug' => 'fieldwork', 'description' => "description"],
+            ['title' => 'First Feedback', 'slug' => 'firstfeedback', 'description' => "After two weeks of working on my website I had to pitch it to my teachers and fellow student. In this blog i'll show what feedback i got on my website."],
+            ['title' => 'Programming', 'slug' => 'programming', 'description' => "In this blog i'll talk about what (very little) experience I had in programming before I started this study."],
+            ['title' => 'Study Choice', 'slug' => 'studychoice', 'description' => "In this blog i'll explain why I think ICT fits me."],
+            ['title' => 'SWOT Analysis', 'slug' => 'swot', 'description' => "description"],
         ];
 
         return view('blog', compact('posts'));

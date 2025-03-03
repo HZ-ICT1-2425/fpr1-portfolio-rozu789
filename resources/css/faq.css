@@ -5,21 +5,18 @@
 }
 #faqAllQuestions summary{
     margin-left:0%;
-    font-family: Gowun Dodum;
     font-size: 20px;
     color: #3a3a3a;
 }
 
 #faqAllQuestions details{
     margin-left: 12%;
-    font-family: Gowun Dodum;
     font-size: 20px;
     color: #3a3a3a;
     margin-bottom: 20px;
 }
 
 h3 {
-    font-family: outfit;
     font-size: 40px;
     color: #3a3a3a;
     text-align: left;
