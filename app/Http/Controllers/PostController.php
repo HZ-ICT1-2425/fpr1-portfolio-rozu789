@@ -2,38 +2,49 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
-    /**
-     * Show the list of blog posts.
-     */
+
     public function index()
     {
-        $posts = [
-            ['title' => 'Fieldwork', 'slug' => 'fieldwork', 'description' => "description"],
-            ['title' => 'First Feedback', 'slug' => 'firstfeedback', 'description' => "After two weeks of working on my website I had to pitch it to my teachers and fellow student. In this blog i'll show what feedback i got on my website."],
-            ['title' => 'Programming', 'slug' => 'programming', 'description' => "In this blog i'll talk about what (very little) experience I had in programming before I started this study."],
-            ['title' => 'Study Choice', 'slug' => 'studychoice', 'description' => "In this blog i'll explain why I think ICT fits me."],
-            ['title' => 'SWOT Analysis', 'slug' => 'swot', 'description' => "description"],
-        ];
-
-        return view('blog', compact('posts'));
+        return view('blog', [
+            'posts' => Post::all()
+        ]);
     }
 
-    /**
-     * Show a specific blog post.
-     */
-    public function show(string $slug)
+
+    public function create()
     {
-        $viewPath = 'blogposts.' . Str::slug($slug);
+        return view('posts.create');
+    }
 
-        if (!view()->exists($viewPath)) {
-            abort(404, 'Post not found');
-        }
 
-        return view($viewPath);
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'column1' => 'required',
+            'column2' => 'required',
+            'column3' => 'required',
+        ]);
+
+        $posts = Post::create($validated);
+
+
+        return redirect()->route('blog');
+    }
+
+
+
+
+
+    public function show(Post $post)
+    {
+        return view('posts.show', [
+            'post' => $post
+        ]);
     }
 }

@@ -11,15 +11,19 @@
         <h1>Bl<span class="headerOutline">og.</span></h1>
     </div>
 
+    <a href="{{ route('posts.create') }}" class="button is-primary">Create a New Blog Post</a>
+    <br><br><br>
+
+
     <div>
         <ul>
             @foreach ($posts as $post)
                 <div class="blogPostField">
                     <h2>{{ $post['title'] }}</h2>
                     <hr>
-                    <p> {{ $post['description'] }} </p>
+                    <p> {{ $post['excerpt'] }} </p>
 
-                    <a href="{{ route('posts.show', $post['slug']) }}">
+                    <a href="{{ route('posts.show', $post) }}">
                         Read more
                     </a>
                 </div>

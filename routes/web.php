@@ -12,5 +12,9 @@ Route::get('/profile', [StaticContentController::class, 'profile'])->name('profi
 
 // Blog routes using PostController
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
+//Route::get('posts/create', [PostController::class, 'create'])->name('posts.create');
+Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+
+Route::view('/posts/create', 'dashboard')->name('posts.create');
