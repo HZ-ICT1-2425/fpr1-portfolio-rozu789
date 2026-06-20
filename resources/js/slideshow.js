@@ -16,11 +16,9 @@ function showSlide(index) {
 window.nextSlide = function () {
     current = (current + 1) % images.length;
     showSlide(current);
-    console.log('next');
 };
 
 window.previousSlide = function () {
     current = (current - 1 + images.length) % images.length;
     showSlide(current);
-    console.log('previous');
 };
