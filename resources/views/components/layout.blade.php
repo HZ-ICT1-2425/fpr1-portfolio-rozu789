@@ -9,52 +9,21 @@
     {{-- Compiled assets --}}
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
-    <style>
-        <?php include 'C:\Users\rosie\Documents\HBO-ICT\year 1\quarter 3\Frameworks Project 1\projects\portfolio-app\resources\css\main.css'; ?>
-        {{ $fileSpecificCssFolder }}
-    </style>
-
-    <script>
-        <?php include 'C:\Users\rosie\Documents\HBO-ICT\year 1\quarter 3\Frameworks Project 1\projects\portfolio-app\resources\js\main.js'; ?>
-        {{ $fileSpecificJsFolder }}
-    </script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 {{-- Navigation bar --}}
-<x-NavBar />
+<x-nav-bar />
 
 {{-- Content --}}
 {{ $slot }}
 
 {{-- Footer --}}
-<footer class="footer">
-    <div class="container">
-        <div class="columns is-multiline">
-
-            <div class="column has-text-centered">
-                <div>
-                    <a href="/" class="link">Home</a>
-                </div>
-            </div>
-
-            <div class="column has-text-centered">
-                <div>
-                    <a href="https://opensource.org/licenses/MIT" class="link">
-                        <i class="fa fa-balance-scale" aria-hidden="true"></i> License: MIT
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a href="https://github.com/dwaard">BugSlayer</a></p>
-            <p>PROJECT FOOTER HERE</p>
-        </div>
-    </div>
-</footer>
+<x-footer />
 
 </body>
 </html>

@@ -1,11 +1,5 @@
 <x-layout>
 
-    <x-slot:fileSpecificCssFolder>
-        <?php include 'C:\Users\rosie\Documents\HBO-ICT\year 1\quarter 3\Frameworks Project 1\projects\portfolio-app\resources\css\profile.css'; ?>
-    </x-slot:fileSpecificCssFolder>
-
-    <x-slot:fileSpecificJsFolder> </x-slot:fileSpecificJsFolder>
-
     {{-- Content --}}
     <div class="header">
         <h1>Pro<span class="headerOutline">file.</span></h1>

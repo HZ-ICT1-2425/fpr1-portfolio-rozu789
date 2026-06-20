@@ -1,13 +1,5 @@
 <x-layout>
 
-    <x-slot:fileSpecificCssFolder>
-        <?php include 'C:\Users\rosie\Documents\HBO-ICT\year 1\quarter 3\Frameworks Project 1\projects\portfolio-app\resources\css\dashboard.css'; ?>
-    </x-slot:fileSpecificCssFolder>
-
-    <x-slot:fileSpecificJsFolder>
-        <?php include 'C:\Users\rosie\Documents\HBO-ICT\year 1\quarter 3\Frameworks Project 1\projects\portfolio-app\resources\js\progressbar.js'; ?>
-    </x-slot:fileSpecificJsFolder>
-
     {{-- Content --}}
     <div class="header">
         <h1><span class="headerOutline">Dash</span>board.</h1>
