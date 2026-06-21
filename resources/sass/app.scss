@@ -8,7 +8,7 @@ $beige-lighter: #eff0eb;
 
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
-  $family-primary: '"Roboto", sans-serif',
+  $family-primary: '"Lato", sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
   $primary: $hz-background,
@@ -21,3 +21,12 @@ $beige-lighter: #eff0eb;
 // (check https://fonts.google.com/ for fonts)
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+// My additions
+.custom-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(4rem, 10vw, 12rem);
+}
+
+.home-subtitle {
+    font-family: 'Montserrat', sans-serif;
+}
