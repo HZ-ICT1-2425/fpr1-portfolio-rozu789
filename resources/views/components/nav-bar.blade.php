@@ -5,7 +5,7 @@
         'Dashboard' => 'dashboard',
         'Faq' => 'faq',
         'Blog' => 'posts.index'
-];
+    ];
 @endphp
 
 <nav class="level">
@@ -18,10 +18,13 @@
     <div class="level-right">
         @foreach($links as $name => $route)
             <div class="level-item">
-                <a class="button is-black is-rounded" href="{{ route($route) }}">
+                <a
+                    class="button is-black is-rounded {{ request()->routeIs($route) ? 'is-active' : '' }}"
+                    href="{{ route($route) }}"
+                >
                     {{ $name }}
                 </a>
             </div>
         @endforeach
-
+    </div>
 </nav>

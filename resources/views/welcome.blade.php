@@ -1,18 +1,22 @@
 <x-layout>
-    {{-- Content --}}
-    <div class="section has-text-right p-6"
-         style="font-family: 'Montserrat', sans-serif; font-size: 320px;">
-        <h1 class="has-text-black">Home.</h1>
-    </div>
 
+    {{-- HERO SECTION --}}
+    <section class="section has-text-right p-6">
+        <h1 class="   has-text-black">Home.</h1>
+    </section>
+
+    {{-- MAIN GRID --}}
     <div class="fixed-grid">
         <div class="grid">
-            <div class="cell m-6">
 
+            {{-- TEXT SECTION --}}
+            <div class="cell m-6">
                 <div class="box m-6">
                     <div class="content p-6">
-                        <h2 style="font-family: 'Lato', sans-serif;">My motivation</h2>
-                        <p class="is-size-5" style="font-family: 'Lato', sans-serif;">
+
+                        <h2 class="home-subtitle">My motivation</h2>
+
+                        <p class="is-size-5">
                             I believe ICT is a great fit fo rme because it connects with so many things I've been passionate about since I was young,
                             especially problem-solving, technology, and video games. From the time i was in elementry school all the way through highschool,
                             math was always my favorite subject. I loved and still love sitting down with a problem and taking it apart until i figure out how to fix it.
@@ -27,20 +31,25 @@
                             on an excersize it just makes me more eager to finish the puzzel. I'm excited to keep improving my skills and figure out how i can use those skills
                             in my future.
                         </p>
+
                     </div>
                 </div>
             </div>
 
+            {{-- SLIDESHOW SECTION --}}
             <div class="cell m-6">
-                    <div class="columns is-centered">
-                        <div class="column is-5 m-6">
-                            <div class="slideshow">
-                                <figure class="image is-1by1">
-                                    <img id="slide" src="{{ asset('images/legobatman1.JPG') }}" alt="lego batman images">
-                                </figure>
-                            </div>
+                <div class="columns is-centered">
+                    <div class="column is-5 m-6">
+
+                        <div class="slideshow">
+                            <figure class="image is-1by1">
+                                <img id="slide" src="{{ asset('images/legobatman1.JPG') }}" alt="lego batman images">
+                            </figure>
                         </div>
+
                     </div>
+                </div>
+
                 <div class="is-flex is-justify-content-center">
                     <button class="button" onclick="previousSlide()">←</button>
                     <button class="button" onclick="nextSlide()">→</button>
