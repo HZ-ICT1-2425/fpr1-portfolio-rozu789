@@ -2,7 +2,7 @@
 
     {{-- HERO SECTION --}}
     <section class="section has-text-right p-6">
-        <h1 class="   has-text-black">Home.</h1>
+        <h1 class="custom-title has-text-black">Home.</h1>
     </section>
 
     {{-- MAIN GRID --}}

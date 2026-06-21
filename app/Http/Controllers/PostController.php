@@ -26,14 +26,10 @@ class PostController extends Controller
     /**
      * Show a specific blog post.
      */
-    public function show(string $slug)
+    public function show(string $post)
     {
-        $viewPath = 'blogposts.' . Str::slug($slug);
-
-        if (!view()->exists($viewPath)) {
-            abort(404, 'Post not found');
-        }
-
-        return view($viewPath);
+        return view('blog.show', [
+            'post' => $post
+        ]);
     }
 }

@@ -19,7 +19,7 @@
         @foreach($links as $name => $route)
             <div class="level-item">
                 <a
-                    class="button is-black is-rounded {{ request()->routeIs($route) ? 'is-active' : '' }}"
+                    class="button is-grey is-rounded {{ request()->routeIs($route) ? 'is-active' : '' }}"
                     href="{{ route($route) }}"
                 >
                     {{ $name }}
